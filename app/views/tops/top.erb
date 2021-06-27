@@ -1,1 +1,12 @@
-<h1>トップよん</h1>
+<h1 class = "top-title">Survive</h1>
+
+<div class = "top-introduction">好きなところで戦おうよ！</div>
+
+<%= button_to "開始",
+    if @players.ids == true  #idsのちに修正
+        rooms_menu_path
+    else
+        tops_new_path
+    end,
+    method: :get
+ %>
