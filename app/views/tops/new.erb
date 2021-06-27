@@ -1,2 +1,7 @@
 <h1>登録ページよ</h1>
 <%# form_withでplayer情報を登録 %>
+<%= form_with model: @player, url: tops_create_path, local: true do |f| %>
+  <div>名前</div>
+  <%= f.text_field :name %>
+  <%= f.submit "登録" %>
+<% end %>
